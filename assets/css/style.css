@@ -322,7 +322,7 @@
  ----------------------------------------*/
 .parallax-section {
 	min-height: 434px;
-	background: url(../img/volunteer.jpg) 0 0 no-repeat;
+	background: url(../../img/photo2.jpg) 0 0 no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
