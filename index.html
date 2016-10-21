@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Charity</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
     <!-- google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300italic,300,700%7CPlayfair+Display:400,700italic%7CRoboto:300%7CMontserrat:400,700%7COpen+Sans:400,300%7CLibre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
     <!-- Bootstrap -->
@@ -25,14 +26,18 @@
     <![endif]-->
 
   </head>
-  <body>
+  <body ng-controller='mainController'>
+
+    
+
+
 
     <div id="wrapper">
       <!--Header Section Start Here -->
       <header id="header">
         <div class="container">
           <div class="row primary-header">
-            <a href="index.html" class="col-xs-12 col-sm-2 brand" title="ACEM">Accion Cristiana Educativa Menonita</a>
+            <a href="index.html" class="col-xs-12 col-sm-2 brand" title="ACEM" style="color:#c4a62d; font-size: 20px;">Accion Cristiana Educativa Menonita</a>
             <div class="social-links col-xs-12 col-sm-10">
               <a href="volunteer.html" class="btn btn-default btn-volunteer">Vuelvete Voluntario</a>
               <ul class="social-icons hidden-xs">
@@ -74,19 +79,19 @@
               <ul class="nav navbar-nav">
 
                 <li>
-                  <a href="index.html">Inicio</a>    
+                  <a href="#/">Inicio</a>    
                 </li>
 
                 <li>
-                  <a href="" >Misión y Visión</a>
+                  <a href="#misionvision" >Misión y Visión</a>
                 </li>
                 
                 <li>
-                  <a href="gallery/gallery.html"  >Galería</a>
+                  <a href="#gallery"  >Galería</a>
                 </li>
 
                 <li>
-                  <a href="contact-us.html">Contáctanos</a>
+                  <a href="#contactus">Contáctanos</a>
                 </li>
 
               </ul>
@@ -121,11 +126,9 @@
                 data-y="150"
                 data-x="152"
                 class="tp-caption sft banner-heading">
-                  <h2><strong>Donate &amp; Help</strong>
+                  <h2><strong>DONA y AYUDA</strong>
                   
-                  African Children for
-                  
-                  Education</h2>
+                  A niños con escasos recursos</h2>
                 </div>
 
                 <div
@@ -136,13 +139,7 @@
                 data-y="304"
                 data-x="152"
                 class="tp-caption sft banner-summary">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    
-                    Pellentesque egestas nisl at dui tempus.There are many
-                    
-                    variations of passages of .
-                  </p>
+                  
                 </div>
 
               </li>
@@ -222,283 +219,12 @@
           </div>
         </section>
         <!-- banner slider End Here -->
-  <!-- Our Causes Section Start Here-->
-        <section class="our-causes">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="page-header section-header clearfix">
-                  <h2>Puedes ayudar a muchas personas donando un poco <strong> Conoce nuestras causas</strong></h2>
-                </div>
+  
 
-                <div class="article-list flexslider article-slider progressbar">
-                  <ul class="slides">
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Ayuda a niños con escasos recursos</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="assets/img/img-slide-01.jpg" alt="">
-                      </figure>
-                      </a>
-                    
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help girls to get Education</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="assets/img/img-slide-02.jpg" alt="">
-                      </figure>
-                      </a>
-                   
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help us to send Vegetables to Africa</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="assets/img/img-slide-03.jpg" alt="">
-                      </figure>
-                      </a>
-                    
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help african children to have homes</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="assets/img/img-slide-01.jpg" alt="">
-                      </figure>
-                      </a>
-                    
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help girls to get Education</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photoHD4.jpg" alt="">
-                      </figure>
-                      </a>
-                   
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help us to send Vegetables to Africa</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photo3.jpg" alt="">
-                      </figure>
-                      </a>
-                    
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help african children to have homes</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photoHD2.jpg" alt="">
-                      </figure>
-                      </a>
-                    
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help girls to get Education</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photoHD3.jpg" alt="">
-                      </figure>
-                      </a>
-                   
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="items zoom">
-                    <h3 class="h6">Help us to send Vegetables to Africa</h3>
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photoHD4.jpg" alt="">
-                      </figure>
-                      </a>
-                    
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque. Future stuffs also goes...
-                    </p>
-                  </div>
-                  </li>
-                  
-                
-                </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-  <!-- Our Causes Section End Here-->
+      <ng-view></ng-view>
 
 
-  <!-- Become Volunteer Section Start Here -->
-        <section class="parallax-section parallax">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-7 col-md-5">
-                <h2>Vuelvete <strong>Voluntario</strong></h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit ellentesque egestas nisl at dui tempus uis imperdiet  fringilla. consectetur adipiscing elit.
-                </p>
-                <a data-toggle="modal" href="external.html" data-target=".join-now-form" class="btn btn-default">Join Now</a>
-              </div>
-            </div>
-          </div>
-        </section>
-  <!-- Become Volunteer Section End Here -->
 
-  <!-- Latest News Section Start Here -->
-        <section class="latest-news ">
-          <div class="container anim-section">
-            <div class="row">
-              <div class="col-xs-12">
-                <header class="page-header section-header clearfix">
-                </header>
-
-                <div class="article-list row">
-                  <div class="items zoom col-xs-12 col-sm-4">
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photo2.jpg" alt="">
-                      </figure>
-                      </a>
-                    <h3>News Heading Title</h3>
-                    <span class="date">03 DEC 2013</span><span class="posted-in">Posted In : category</span>
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque small project decriptions
-                    </p>
-                    <a href="blog-full-width.html" class="btn btn-default">READ MORE</a>
-                  </div>
-                  <div class="items zoom col-xs-12 col-sm-4">
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photo3.jpg" alt="">
-                      </figure>
-                      </a>
-                    <h3>Nunc sit amet justo quis urna hendrerit </h3>
-                    <span class="date">03 DEC 2013</span><span class="posted-in">Posted In : category</span>
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque small project decriptions
-                    </p>
-                    <a href="blog-full-width.html" class="btn btn-default">READ MORE</a>
-                  </div>
-                  <div class="items zoom col-xs-12 col-sm-4">
-                    <a href="#" class="img-thumb">
-                      <figure>
-                      <img src="img/photo5.jpg" alt="">
-                      </figure>
-                      </a>
-                    <h3>News Heading Title</h3>
-                    <span class="date">03 DEC 2013</span><span class="posted-in">Posted In : category</span>
-                    <p>
-                      Lorem ipsum dolor sit consectetur adipiscing elit ellentesque small project decriptions
-                    </p>
-                    <a href="blog-full-width.html" class="btn btn-default">READ MORE</a>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-  <!-- Latest News Section End Here -->
-
-  <!--Testimonial Section Start Here -->  <!--     
-        <section class="testimonial parallax">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="testimonial-slider flexslider">
-                  <ul class="slides">
-                    <li>
-                  <div class="slide">
-                    <h2>Testimonio de donantes </h2>
-                    <blockquote>
-                      <p>
-                        “Etiam imperdiet metus ut pretium gravida uisque et vestibulum lacus. Maecenas at lacinia lacus. ”
-                      </p>
-                      <footer>
-                        <span>Jhon doe</span>
-                        <cite>(New media of Marketing firm)</cite>
-                      </footer>
-                    </blockquote>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="slide">
-                    <h2>Donation Holders say <strong> Read Below</strong></h2>
-                    <blockquote>
-                      <p>
-                        “Etiam imperdiet metus ut pretium gravida uisque et vestibulum lacus. Maecenas at lacinia lacus. ”
-                      </p>
-                      <footer>
-                        <span>Jhony Waker</span>
-                        <cite>(CEO at NewCompany)</cite>
-                      </footer>
-                    </blockquote>
-                  </div>
-                  </li>
-                  <li>
-                  <div class="slide">
-                    <h2>Donation Holders say <strong> Read Below</strong></h2>
-                    <blockquote>
-                      <p>
-                        “Etiam imperdiet metus ut pretium gravida uisque et vestibulum lacus. Maecenas at lacinia lacus. ”
-                      </p>
-                      <footer>
-                        <span>Tony Vedvik</span>
-                        <cite>(Head Sales of Sense Technology)</cite>
-                      </footer>
-                    </blockquote>
-                  </div>
-                </li>
-                </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> -->
-  <!--Testimonial Section End Here -->
 
       </div>
   <!--Content End Here -->
@@ -804,5 +530,8 @@
     <!--Main Slider End Js-->
     <script src="assets/js/jquery.flexslider.js"></script>
     <script src="assets/js/site.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
